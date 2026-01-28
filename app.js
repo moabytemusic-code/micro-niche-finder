@@ -54,24 +54,25 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    button.textContent = "Success! Check your inbox.";
+                    button.textContent = "Success! Redirecting...";
                     button.style.background = "#10b981"; // Green
+
+                    // Redirect to Monetized Thank You Page
+                    setTimeout(() => {
+                        window.location.href = "/thank-you.html";
+                    }, 1000);
+
                 } else {
                     button.textContent = "Error. Try again.";
                     button.style.background = "#ef4444"; // Red
-                }
 
-                // Reset after 2 seconds
-                setTimeout(() => {
-                    modal.classList.remove('visible');
+                    // Only reset if error
                     setTimeout(() => {
-                        modal.classList.add('hidden');
                         button.textContent = originalText;
                         button.disabled = false;
-                        button.style.background = ""; // Reset
-                        nicheInput.value = ""; // Clear input
-                    }, 300);
-                }, 2000);
+                        button.style.background = "";
+                    }, 2000);
+                }
             })
             .catch(err => {
                 console.error(err);

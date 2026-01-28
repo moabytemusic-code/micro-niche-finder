@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Report is on the way! | Signal Engines</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .thank-you-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 4rem;
+        }
+
+        .monitor-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        .offer-box {
+            background: linear-gradient(145deg, #1e1e2e, #13131f);
+            border: 1px solid var(--primary);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-top: 3rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 40px rgba(79, 70, 229, 0.2);
+        }
+
+        .discount-badge {
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: #ef4444;
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .price-tag {
+            font-size: 3rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--accent);
+            margin: 1rem 0;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        ul.checklist {
+            text-align: left;
+            margin: 2rem auto;
+            max-width: 400px;
+            list-style: none;
+        }
+
+        ul.checklist li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        ul.checklist li span {
+            color: #10b981;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-mesh"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">⚡</span> SIGNAL ENGINES
+        </div>
+    </nav>
+
+    <main class="thank-you-container">
+        <div class="monitor-icon">📩</div>
+        <h1>Success! Your Niche Report is being generated.</h1>
+        <p class="sub-headline">It will arrive in your inbox in about 5 minutes.</p>
+
+        <div class="offer-box">
+            <div class="discount-badge">80% OFF</div>
+            <h2>Wait! Don't Start From Scratch.</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">While you wait for your report, grab the exact
+                blueprint we use to launch profitable side hustles in 24 hours.</p>
+
+            <h3>The 24-Hour Side Hustle Launchpad</h3>
+
+            <ul class="checklist">
+                <li><span>✓</span> Copy-paste validation scripts</li>
+                <li><span>✓</span> 5 Plug-and-play landing page templates</li>
+                <li><span>✓</span> The "Zero-Ad-Spend" traffic checklist</li>
+            </ul>
+
+            <div class="price-tag">
+                <span class="old-price">$47</span> $7
+            </div>
+
+            <a href="https://buy.stripe.com/8x2fZg880eHL9HFfUi4wM01" style="text-decoration: none;">
+                <button class="btn-primary glow-effect"
+                    style="width: 100%; justify-content: center; font-size: 1.2rem;">
+                    Get Instant Access for $7
+                </button>
+            </a>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem;">One-time offer. Use this to
+                execute your niche idea immediately.</p>
+        </div>
+
+        <p style="margin-top: 3rem; color: var(--text-muted); font-size: 0.9rem;">
+            <a href="/" style="color: var(--text-muted);">No thanks, just take me to the home page</a>
+        </p>
+    </main>
+</body>
+
+</html>
