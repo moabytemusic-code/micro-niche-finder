@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-Niche Finder | Signal Engines</title>
+    <meta name="description" content="Validate your side hustle idea in seconds with AI-powered niche analysis.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-mesh"></div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">⚡</span> SIGNAL ENGINES
+        </div>
+        <div class="nav-links">
+            <a href="#">Analysis Tool</a>
+            <a href="#">Case Studies</a>
+            <a href="#" class="btn-secondary">Login</a>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <div class="badge">New: AI Profit Scoring</div>
+            <h1>Stop Guessing. Find Your <br><span class="gradient-text">Profitable Niche</span> in Seconds.</h1>
+            <p class="sub-headline">The only AI-powered tool that validates your side hustle idea before you waste time building it.</p>
+            
+            <div class="interactive-demo">
+                <div class="search-container">
+                    <input type="text" id="niche-input" placeholder="e.g. 'Vegan dog treats' or 'Notion templates for students'">
+                    <button class="btn-primary glow-effect" id="analyze-btn">
+                        Analyze Idea <span class="icon">→</span>
+                    </button>
+                </div>
+                <div class="demo-status" id="demo-status">
+                    <span class="dot"></span> AI Engine Ready
+                </div>
+            </div>
+
+            <div class="trust-bar">
+                <p>Join 10,000+ Entrepreneurs using Signal Engines</p>
+                <div class="avatars">
+                    <!-- Placeholder user avatars -->
+                    <div class="avatar"></div>
+                    <div class="avatar"></div>
+                    <div class="avatar"></div>
+                    <div class="avatar"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="features-grid">
+        <div class="feature-card">
+            <div class="card-icon">🚦</div>
+            <h3>Traffic Analysis</h3>
+            <p>Instantly see search volume, trends, and audience interest. Know if people are actually searching for it.</p>
+        </div>
+        <div class="feature-card">
+            <div class="card-icon">🔭</div>
+            <h3>Competitor Scan</h3>
+            <p>Uncover top competitors and their weaknesses. Find the gaps in the market you can exploit.</p>
+        </div>
+        <div class="feature-card">
+            <div class="card-icon">💰</div>
+            <h3>Profit Score</h3>
+            <p>Get a custom profitability score (0-100) based on CPC and monetization potential.</p>
+        </div>
+    </section>
+
+    <!-- Modal for Email Capture (Hidden by default) -->
+    <div id="capture-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Unlock Your Report</h2>
+                <p>Enter your email to save the analysis for <span id="target-keyword" class="highlight">...</span> and get your Profit Score.</p>
+            </div>
+            <form id="lead-form">
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder="name@example.com">
+                </div>
+                <button type="submit" class="btn-primary full-width">Reveal Data</button>
+                <p class="disclaimer">No spam. Unsubscribe anytime.</p>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Signal Engines. Built by Antigravity.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

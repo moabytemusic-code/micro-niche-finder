@@ -1,0 +1,7 @@
+{
+    "name": "micro-niche-finder",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "serve"
+    }
+}
