@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 5: Sales Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Verdana', sans-serif;
+            line-height: 1.6;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 3rem;
+            color: #27ae60;
+            margin: 2rem 0;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 1.5rem;
+        }
+
+        .features {
+            background: #ecf0f1;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .feature-list li:before {
+            content: "✓ ";
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .cta-section {
+            background: #27ae60;
+            color: white;
+            text-align: center;
+        }
+
+        .btn-buy {
+            background: white;
+            color: #27ae60;
+            padding: 1.5rem 3rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .guarantee {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section hero">
+        <div class="container">
+            <h1>Stop [Pain Point]. Start [Desired Outcome].</h1>
+            <p>The complete system to [achieve result] in [timeframe]</p>
+            <div class="price">
+                <span class="old-price">$97</span> $47
+            </div>
+        </div>
+    </div>
+
+    <div class="section features">
+        <div class="container">
+            <h2>What You Get:</h2>
+            <ul class="feature-list">
+                <li>Feature 1: [Specific benefit]</li>
+                <li>Feature 2: [Specific benefit]</li>
+                <li>Feature 3: [Specific benefit]</li>
+                <li>Bonus: [Extra value]</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <button class="btn-buy">Buy Now for $47</button>
+            <p class="guarantee">🔒 30-Day Money-Back Guarantee</p>
+        </div>
+    </div>
+</body>
+
+</html>

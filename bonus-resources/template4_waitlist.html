@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 4: Waitlist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .content {
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .badge {
+            background: #ff4757;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .highlight {
+            background: linear-gradient(to right, #f953c6, #b91d73);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.7;
+        }
+
+        .waitlist-form {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        input {
+            flex: 1;
+            padding: 1.2rem;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        button {
+            background: linear-gradient(135deg, #f953c6 0%, #b91d73 100%);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .count {
+            font-size: 0.9rem;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="content">
+            <div class="badge">🚀 Coming Soon</div>
+            <h1>The <span class="highlight">Future</span> of [Your Category]</h1>
+            <p>Be the first to know when we launch. Join the waitlist.</p>
+            <form class="waitlist-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Join Waitlist</button>
+            </form>
+            <p class="count">2,847 people already signed up</p>
+        </div>
+    </div>
+</body>
+
+</html>
