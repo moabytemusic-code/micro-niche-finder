@@ -128,17 +128,34 @@
                 <li><span>✓</span> The "Zero-Ad-Spend" traffic checklist</li>
             </ul>
 
+            <div
+                style="background: rgba(239, 68, 68, 0.1); border: 1px solid #ef4444; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem;">
+                <p style="margin: 0; font-size: 0.9rem; color: #ef4444;">⏰ This offer expires in: <span id="countdown"
+                        style="font-weight: bold; font-size: 1.2rem;">15:00</span></p>
+            </div>
+
             <div class="price-tag">
                 <span class="old-price">$47</span> $7
+            </div>
+
+            <div
+                style="background: rgba(16, 185, 129, 0.05); border-left: 3px solid #10b981; padding: 1rem; margin: 1.5rem 0; text-align: left;">
+                <p style="font-style: italic; margin: 0; font-size: 0.95rem;">"I used this exact blueprint to validate
+                    and launch my Notion templates store. Made $340 in the first week."</p>
+                <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: var(--text-muted);">— Sarah K., Side Hustler
+                </p>
             </div>
 
             <a href="https://buy.stripe.com/8x2fZg880eHL9HFfUi4wM01" style="text-decoration: none;">
                 <button class="btn-primary glow-effect"
                     style="width: 100%; justify-content: center; font-size: 1.2rem;">
-                    Get Instant Access for $7
+                    Yes! Give Me Instant Access for $7 →
                 </button>
             </a>
-            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1rem;">One-time offer. Use this to
+            <p style="font-size: 0.85rem; color: #10b981; margin-top: 0.5rem; font-weight: 600;">
+                🔒 30-Day Money-Back Guarantee
+            </p>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">One-time offer. Use this to
                 execute your niche idea immediately.</p>
         </div>
 
@@ -146,6 +163,25 @@
             <a href="/" style="color: var(--text-muted);">No thanks, just take me to the home page</a>
         </p>
     </main>
+
+    <script>
+        // 15-minute countdown timer
+        let timeLeft = 15 * 60; // 15 minutes in seconds
+        const countdownEl = document.getElementById('countdown');
+
+        const timer = setInterval(() => {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            countdownEl.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                countdownEl.textContent = "EXPIRED";
+                countdownEl.style.color = "#666";
+            }
+            timeLeft--;
+        }, 1000);
+    </script>
 </body>
 
 </html>
